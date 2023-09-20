@@ -103,6 +103,12 @@ header p {
   font-weight: 400;
   margin: 0% 5%;
   width: 100% !important;
+  line-height: normal;
+}
+header span{
+  color: rgb(26, 0, 128) ;
+  font-size: 27px;
+  font-weight: 600;
 }
 .contacts {
   width: 40%;
