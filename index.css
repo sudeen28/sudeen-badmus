@@ -30,14 +30,14 @@ body {
 .leaves img{
   position: absolute;
   z-index: -1;
-  top: 200px;
-  left: 100px;
+  top: 13rem;
+  left: 6rem;
 }
 .leaves5{
   position: absolute;
-  right: 10px;
+  right: 1rem;;
   z-index: -1;
-  top: 700px;
+  top: 41rem;
 }
 .leaves5 img{
   width: 350px;
@@ -45,7 +45,6 @@ body {
 }
 .leaves3{
   position: absolute;
-  /* right: 10px; */
   z-index: -1;
   bottom: 300px;
 }
@@ -57,13 +56,30 @@ nav {
   width: 100%;
 }
 .navbars a {
-  width: 50% !important;
+  width: 50% ;
   margin-left: 5%;
 }
+/* ----------------- */
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  display: block;
+  background-color: var(--clr-accent);
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  height: 3px;
+  width: 0%;
+}
+.nav-links li a:hover::after{
+  width: 80%;
+}
+/* ------------------- */
 nav a span,
 .about-text span,
 .form span {
-  font-size: 50px !important;
+  font-size: 50px;
   font-family: "montserrat";
   font-weight: 600;
   margin: 0;
@@ -73,7 +89,7 @@ nav a span:hover,
 .about-text span:hover,
 .form span:hover {
   animation: dance 0.5s infinite;
-  color: burlywood;
+  color: var(--clr-accent);
 }
 @keyframes dance {
   20% {
@@ -84,12 +100,12 @@ nav a span:hover,
   }
 }
 nav a span {
-  font-size: 50px !important;
+  font-size: 50px ;
   font-family: "montserrat";
   font-weight: 600;
 }
 .nav-links {
-  font-size: 20px !important;
+  font-size: 20px ;
   font-family: "montserrat";
   font-weight: 400;
 }
@@ -98,17 +114,33 @@ header {
   display: flex;
 }
 header p {
-  font-size: 20px !important;
+  font-size: 20px;
   font-family: "montserrat";
   font-weight: 400;
   margin: 0% 5%;
-  width: 100% !important;
+  width: 100% ;
   line-height: normal;
+  transition: all 3s;
 }
-header span{
-  color: rgb(26, 0, 128) ;
+header p span{
+  color: var(--clr-accent) ;
   font-size: 27px;
   font-weight: 600;
+}
+.offcanvas{
+  background-color: #dff6ff !important;
+
+}
+.offcanvas-body{
+  display: flex;
+  align-items: center;
+}
+.offcanvas-body ul{
+  font-size: 70px;
+  font-family: 'montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contacts {
   width: 40%;
@@ -187,8 +219,8 @@ input {
   border-top: none !important;
   border-right: none !important;
   border-left: none !important;
-  font-size: 20px !important;
-  font-family: "montserrat" !important;
+  font-size: 20px ;
+  font-family: "montserrat";
 }
 input:focus {
   outline: none !important;
@@ -221,9 +253,6 @@ footer {
 footer p {    
   width: 40% !important;
 }
-/* .social-links {
-  width: 30% !important;
-} */
 .social-links {
   display: flex;
   justify-content: space-between;
@@ -231,7 +260,6 @@ footer p {
   text-decoration: none;
   color: black;
 }
-
 .btn {
   position: relative;
   display: inline-flex;
@@ -310,7 +338,6 @@ footer p {
 .btn[data-animate="right"]:is(:hover, :focus-visible)::after {
   transform-origin: right;
 }
-
 .click {
   display: inline-block;
   text-decoration: none;
@@ -331,7 +358,6 @@ footer p {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   }
 }
-
 .button {
   transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -342,15 +368,12 @@ footer p {
   margin-left: 15px;
   opacity: 0.5;
 }
-
 .button:hover {
   transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   opacity: 1;
   margin-top: -10px;
-  -webkit-box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button img {
@@ -358,10 +381,7 @@ footer p {
   margin-left: -10px;
 }
 
-/* instagram image fix */
-#img_2 {
-  margin: 0;
-}
+
 
 /* -------------Media Query------------- */
 @media screen and (max-width: 768px) {
@@ -381,9 +401,9 @@ footer p {
   }
   header p {
     width: 85% !important;
-    text-align: justify;
+    text-align:center;
     justify-content: center !important;
-  }
+    }
   .contacts {
     justify-content: center;
   }
@@ -464,7 +484,6 @@ footer p {
     width: 100% !important;
     justify-content: center;
     text-align: center;
-    /* justify-content: space-between !important; */
   }
   .social-links div{
     width: 70% !important;

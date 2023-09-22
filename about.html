@@ -17,8 +17,8 @@
             <span>S</span><span>u</span><span>d</span><span>e</span><span>e</span><span>n</span>
             <span>B</span><span>a</span><span>d</span><span>m</span><span>u</span><span>s</span>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="nav-links collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,6 +37,46 @@
         </div>
       </nav>
 
+
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sudeen Badmus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="">
+              <li class="">
+                <a class="nav-link active" aria-current="page" href="/"
+                  >Home
+                </a>
+              </li>
+              <li class="">
+                <a class="nav-link active" aria-current="page" href="./about.html"
+                  >About
+                </a>
+              </li>
+              <li class="">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contacts.html"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+        </div>
+      </div>
+
       <nav class="navbar navbar-expand-lg mx-auto ">
       <div class="navbars">
         <a class="navbar-brand me-2" href="#">
@@ -45,15 +85,49 @@
         </a></div></nav>
     
 
-      <footer class="mt-5 ">
-        <p>Designed & Developed by Sudeen Badmus</p>
-        <div class="social-links d-flex">
-          <a href="">Twitter</a>
-          <a href="">Linkdin</a>
-          <a href="">Github</a>
-          <a href="">Blog</a>
-        </div>
-      </footer>
+        <footer class="mt-5">
+          <p>Designed & Developed by Sudeen Badmus</p>
+          <div class="social-links mb-3">
+            <div class="button">
+              <a href="#">
+                <img
+                  src="./assets/square-x-twitter.svg  "
+                  height="50"
+                  width="50"
+                  alt=""
+                />
+              </a>
+            </div>
+    
+            <div class="button">
+              <a href="#">
+                <img
+                  src="./assets/square-instagram.svg"
+                  height="50"
+                  width="50"
+                  alt=""
+                />
+              </a>
+            </div>
+    
+            <div class="button">
+              <a href="#">
+                <img src="./assets/github.svg" height="50" width="50" alt="" />
+              </a>
+            </div>
+    
+            <div class="button">
+              <a href="#">
+                <img
+                  src="./assets/square-facebook.svg"
+                  height="50"
+                  width="50"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </footer>
 
 
 

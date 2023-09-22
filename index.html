@@ -12,6 +12,10 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/d1460b5476.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- icons link -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -21,11 +25,11 @@
     <title>Sudeen</title>
   </head>
   <body>
-
     <div class="leaves">
-      <img src="./assets/girrafe.png" alt="" width="250px" height="250px">
+      <img src="./assets/girrafe.png" alt="" width="250px" height="250px" />
     </div>
 
+    <!-- -----------------------------NavBars---------------->
     <nav class="navbar navbar-expand-lg">
       <div class="navbars container-fluid">
         <a class="navbar-brand me-2" href="#">
@@ -36,9 +40,9 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -75,20 +79,68 @@
       </div>
     </nav>
 
+    <!-- -----------------------Hamburger---------->
+
+
+    <!-- ---------------------OffCanvas------------>
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+
+<div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sudeen Badmus</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <ul class="">
+        <li class="">
+          <a class="nav-link active" aria-current="page" href="/"
+            >Home
+          </a>
+        </li>
+        <li class="">
+          <a class="nav-link active" aria-current="page" href="./about.html"
+            >About
+          </a>
+        </li>
+        <li class="">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="./projects.html"
+            >Projects</a
+          >
+        </li>
+        <li class="">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="./contacts.html"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+  </div>
+</div>
+
     <header>
       <p>
-        <span>Hi,i'm Sudeen,</span> i'm a <span>frontend developer</span> and a <span>Graphics designer</span>.I'm interested in Web development and i like to <span>build </span> cool stuff that run on devices and are appealing to the eyes.I also love listening to music and watching Documentary.
+        <span>Hi,I'm Sudeen,</span> I'm a <span>frontend developer</span> and a
+        <span>Graphics designer</span>.I'm interested in Web development and i
+        like to <span>build </span> cool stuff that run on devices and are
+        appealing to the eyes.I also love listening to music and watching
+        Documentary.
       </p>
 
       <div class="contacts">
         <div class="buttons">
-          <button
+          <a href="document.pdf" download><button
             class="click btn w-20 rounded-5 p-3"
             data-type="outline"
             data-animate="right"
           >
             Download CV
-          </button>
+            <i class="fa-solid fa-download"></i>
+          </button></a>
           <button
             class="click btn w-20 rounded-5 p-3"
             data-type="outline"
@@ -161,16 +213,17 @@
     </div>
 
     <div class="leaves5">
-      <img src="./assets/giraffe2.png" alt="" width="250px" height="250px">
+      <img src="./assets/giraffe2.png" alt="" width="250px" height="250px" />
     </div>
 
     <section class="about-me mt-5">
-      <div class="image" >
-        <img  src="./assets/cosing man.png" alt="shshsjhsjsjs"  />
+      <div class="image">
+        <img src="./assets/cosing man.png" alt="shshsjhsjsjs" />
       </div>
       <div class="about-text">
         <h1>
-          <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>M</span><span>e</span>
+          <span>A</span><span>b</span><span>o</span><span>u</span
+          ><span>t</span> <span>M</span><span>e</span>
         </h1>
         <p>
           Focused on building awesome and high-quality websites that are also
@@ -192,7 +245,7 @@
     </div>
 
     <div class="leaves3">
-      <img src="./assets/hand drawn leaves.jfif 2.png" alt="">
+      <img src="./assets/hand drawn leaves.jfif 2.png" alt="" />
     </div>
 
     <section class="contacts mt-5">
@@ -260,7 +313,7 @@
 
     <footer class="mt-5">
       <p>Designed & Developed by Sudeen Badmus</p>
-      <div class="social-links mb-3 ">
+      <div class="social-links mb-3">
         <div class="button">
           <a href="#">
             <img
@@ -270,18 +323,12 @@
               alt=""
             />
           </a>
-        </div>  
-
-        <div class="button">
-          <a href="#">
-            <img src="./assets/square-instagram.svg" height="50" width="50" alt="" />
-          </a>
         </div>
 
         <div class="button">
           <a href="#">
             <img
-              src="./assets/github.svg"
+              src="./assets/square-instagram.svg"
               height="50"
               width="50"
               alt=""
@@ -291,8 +338,14 @@
 
         <div class="button">
           <a href="#">
+            <img src="./assets/github.svg" height="50" width="50" alt="" />
+          </a>
+        </div>
+
+        <div class="button">
+          <a href="#">
             <img
-              src="./assets/square-facebook.svg" 
+              src="./assets/square-facebook.svg"
               height="50"
               width="50"
               alt=""
