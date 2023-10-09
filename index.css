@@ -185,6 +185,10 @@ header p span{
   font-family: 'montserrat';
   font-weight:400
 }
+.card img{
+  width: 100px;
+  height: 100px;
+}
 .projects p {
   margin: 0;
 }
@@ -449,10 +453,24 @@ footer p {
     justify-content: center !important;
     }
   .contacts {
-    justify-content: center;
+    /* justify-content: center; */
   }
   .card-container {
     width: 100% !important;
+  }
+  .stacks{
+    /* height: 60% !important; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    /* justify-content: space-between; */
+  }
+  .stacks button{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 3px;
   }
   .image {
     width: 100%;
@@ -481,12 +499,12 @@ footer p {
   }
   .contacts {
     display: flex !important;
-    justify-content: center !important;
+    /* justify-content: center !important; */
     width: 100% !important;
   }
   .form {
     width: 98% !important;
-    justify-content: center !important;
+    /* justify-content: center !important; */
     display: flex;
     flex-direction: column;
     align-items: center;
