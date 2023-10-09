@@ -27,31 +27,7 @@ body {
   color: black !important;
   position: relative;
 }
-.leaves img{
-  position: absolute;
-  z-index: -1;
-  top: 13rem;
-  left: 6rem;
-}
-.leaves5{
-  position: absolute;
-  right: 1rem;;
-  z-index: -1;
-  top: 41rem;
-}
-.leaves5 img{
-  width: 350px;
-  height: 350px;
-}
-.leaves3{
-  position: absolute;
-  z-index: -1;
-  bottom: 300px;
-}
-.leaves3 img{
-  width: 350px;
-  height: 350px;
-}
+
 nav {
   width: 100%;
 }
@@ -78,7 +54,8 @@ nav {
 /* ------------------- */
 nav a span,
 .about-text span,
-.form span {
+.form span,
+.form p {
   font-size: 50px;
   font-family: "montserrat";
   font-weight: 600;
@@ -129,7 +106,6 @@ header p span{
 }
 .offcanvas{
   background-color: #dff6ff !important;
-
 }
 .offcanvas-body{
   display: flex;
@@ -141,6 +117,30 @@ header p span{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  transition: all 0.53s;
+
+}
+.offcanvas-body ul li a:hover{
+  margin-right: 35px !important;
+  transition: all 0.53s;
+}
+  
+.offcanvas-body li::after{
+  position: relative;
+ 
+}
+.offcanvas-body li a::after{
+  content: "";
+  display: block;
+  background-color: var(--clr-accent);
+  position: absolute;
+  transition: ease-in-out 0.53s;
+  height: 3px;
+  width: 0%;
+}
+.offcanvas-body li a:hover::after{
+  width: 80%;
 }
 .contacts {
   width: 40%;
@@ -162,6 +162,28 @@ header p span{
 }
 .card {
   margin: 0;
+  /* height: 50vh !important; */
+  background-color: #d1eaf3 !important;
+  transition: ease-in-out 0.5s;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
+
+}
+.card:hover{
+  background-color:#d9630f!important;
+  color: white !important;
+  transform: scale(1.04);
+  transition: ease-in-out 0.5s;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.card-title{
+  font-size: 30px;
+  font-family: 'montserrat';
+  font-weight: 600;
+}
+.card-text{
+  font-size: 15px;
+  font-family: 'montserrat';
+  font-weight:400
 }
 .projects p {
   margin: 0;
@@ -260,6 +282,7 @@ footer p {
   text-decoration: none;
   color: black;
 }
+
 .btn {
   position: relative;
   display: inline-flex;
@@ -345,6 +368,25 @@ footer p {
   position: relative;
   animation: bounce 1s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate;
 }
+.click:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 100%;
+  padding-left: 30%;
+  margin-left: -5px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.click:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 .btn-sec {
   animation: driving 3s ease infinite;
 }
@@ -388,6 +430,8 @@ footer p {
   .navbars {
     width: 100% !important;
     margin: 0% !important;
+    display: flex;
+    justify-content: center;
   }
   .navbars a {
     margin: 0% !important;
@@ -429,16 +473,6 @@ footer p {
     flex-direction: column;
     justify-content: center;
   }
-  .leaves5{
-    position: absolute;
-    right: 10px;
-    z-index: -1;
-    top: 1050px;
-  }
-  .leaves5 img{
-    width: 350px;
-    height: 350px;
-  }
   .about-text h1 {
     text-align: center;
   }
@@ -468,7 +502,7 @@ footer p {
   }
   .form h1,
   .form p {
-    width: 80% !important;
+    width: 90% !important;
     justify-content: center;
   }
   footer {

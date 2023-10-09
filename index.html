@@ -22,12 +22,10 @@
       rel="stylesheet"
     />
 
-    <title>Sudeen</title>
+    <title>Sudeen Badmus</title>
   </head>
   <body>
-    <div class="leaves">
-      <img src="./assets/girrafe.png" alt="" width="250px" height="250px" />
-    </div>
+   
 
     <!-- -----------------------------NavBars---------------->
     <nav class="navbar navbar-expand-lg">
@@ -79,11 +77,8 @@
       </div>
     </nav>
 
-    <!-- -----------------------Hamburger---------->
-
-
     <!-- ---------------------OffCanvas------------>
-    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+    <button class="btn" id="offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
 
 <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
@@ -128,12 +123,12 @@
         <span>Graphics designer</span>.I'm interested in Web development and i
         like to <span>build </span> cool stuff that run on devices and are
         appealing to the eyes.I also love listening to music and watching
-        Documentary.
+        Documentaries.
       </p>
 
       <div class="contacts">
         <div class="buttons">
-          <a href="document.pdf" download><button
+          <a href="./assets/Abiloye.pdf" download><button
             class="click btn w-20 rounded-5 p-3"
             data-type="outline"
             data-animate="right"
@@ -152,56 +147,103 @@
       </div>
     </header>
 
+
+    
+
     <!-- projects section -->
+
+
+
+
+
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <h1>Coming soon</h1>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="./contacts.html">You like what you see!</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="projects d-flex mt-5 p-5">
       <div class="card-container">
         <div class="card">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Web Design</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Mobile compatibility, Easy navigation and routing of web pages, interesting menu, functionality, great and aappealing
+              visual design, maximum effect, great, informative, easy to read and concise contents, web-friendly, proper engagements of
+              visitors, accessible informations, intuitive and interesting landing page, client generaying websites.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              Check em out
+            </button>
           </div>
         </div>
-        <p class="mt-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-          animi doloribus ullam omnis excepturi ducimus dolorum. Vitae
-          laboriosam praesentium perferendis.
-        </p>
         <div class="buttons mt-3">
-          <button class="btn btn-secondary">html</button>
-          <button class="btn btn-secondary">html</button>
-          <button class="btn btn-secondary">html</button>
+          <button class="btn btn-secondary">Html</button>
+          <button class="btn btn-secondary">Css</button>
+          <button class="btn btn-secondary">Bootstrap</button>
+          <button class="btn btn-secondary">JavaScript</button>
+          <button class="btn btn-secondary">React</button>
         </div>
       </div>
+</div>
+<!-- Button trigger modal -->
+
+
 
       <div class="card-container">
         <div class="card">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Graphics Design</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Touch of reality with images, the proper use of illustrations to visualize key informations, image
+              relevance to designs to convey the tight message and tone. Proper typography, fonts, thickness, size,
+              weight and style. Proper use of color palette.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Check em out
+            </button>
           </div>
         </div>
-        <p class="mt-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-          animi doloribus ullam omnis excepturi ducimus dolorum. Vitae
-          laboriosam praesentium perferendis.
-        </p>
         <div class="buttons mt-3 m-0">
-          <button class="btn btn-secondary">html</button>
-          <button class="btn btn-secondary">html</button>
-          <button class="btn btn-secondary">html</button>
+          <button class="btn btn-secondary">CorelDRAW</button>
+          <button class="btn btn-secondary">Photoshop</button>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h1>Coming soon</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="./contacts.html">You like what you see!</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <div class="archive d-flex justify-content-center">
       <button
         class="btn w-20 rounded-5 p-3 mt-2"
@@ -212,9 +254,7 @@
       </button>
     </div>
 
-    <div class="leaves5">
-      <img src="./assets/giraffe2.png" alt="" width="250px" height="250px" />
-    </div>
+
 
     <section class="about-me mt-5">
       <div class="image">
@@ -244,9 +284,7 @@
       </button>
     </div>
 
-    <div class="leaves3">
-      <img src="./assets/hand drawn leaves.jfif 2.png" alt="" />
-    </div>
+    
 
     <section class="contacts mt-5">
       <div class="form">
@@ -255,10 +293,8 @@
           ><span>n</span> <span>T</span><span>o</span><span>u</span
           ><span>c</span><span>h</span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit, possimus!
-        </p>
+        <h4>What can we do for you
+        </h4>
         <div class="form-floating mb-3">
           <input
             type="Name"
@@ -355,6 +391,13 @@
       </div>
     </footer>
 
+
+
+
+
+
+
+
     <!-- Bootstrap Js Cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -362,6 +405,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Js link -->
-    <script type="module" src="./index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
