@@ -18,5 +18,20 @@
 //     },
 //     { passive: true }
 
-// );
+// async function myasync() {
+//     // return "hello world" 
+//     return Promise.resolve("hello world"); 
+// }
+// myasync().then((data)=>{
+//     console.log(data);
+// })
 
+
+const button = document.querySelector('.butt');
+
+button.addEventListener("click", setDark);
+
+function setDark() {
+    document.body.style.background = "black";
+
+}

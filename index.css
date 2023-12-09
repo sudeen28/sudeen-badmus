@@ -5,6 +5,18 @@
   list-style: none;
   text-decoration: none;
 }
+
+/* --------------------NAVBAR---------------- */
+.navbar-toggler{
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
+.navbar-toggler:focus{
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
 :root {
   --clr-primary: #006fff;
   --clr-accent: #d9630f;
@@ -86,6 +98,9 @@ nav a span {
   font-family: "montserrat";
   font-weight: 400;
 }
+
+/* --------------------NAVBAR---------------- */
+
 header {
   width: 100%;
   display: flex;
@@ -104,6 +119,9 @@ header p span{
   font-size: 27px;
   font-weight: 600;
 }
+
+/* --------------------OFFCANVAS---------------- */
+
 .offcanvas{
   background-color: #dff6ff !important;
 }
@@ -142,6 +160,61 @@ header p span{
 .offcanvas-body li a:hover::after{
   width: 80%;
 }
+
+
+/* --------------------OFFCANVAS---------------- */
+
+/* --------------------modal style---------------- */
+.modal-content{
+  /* height: 10vh !important; */
+  background-color: #b2e7fa !important;
+}
+.project1{
+  display: flex;
+  flex-direction: column;
+
+}
+.project1 img,
+.project2 img{
+  width: 300px; 
+  height: 200px; 
+  border-radius: 10px;
+  transition: all ease-in-out 0.5s;
+  opacity: 80%;
+}
+.project1 img,
+.project2 img::after{
+  content: icon;
+}
+.project1 img:hover,
+.project2 img:hover{
+  /* outline: 3px solid #d9630f; */
+  outline: 3px solid white;
+  transition: all ease-in-out 0.5s;
+  opacity: 100%;
+}
+.project2{
+  display: flex;
+  flex-direction: column;
+  float: right;
+
+}
+.project-content{
+  display: flex;
+  flex-direction: column;
+  font-family: 'montserrat';
+}
+.project-content span:nth-child(1){
+  font-weight: 600;
+}
+.project-content span:nth-child(2){
+  font-weight: 600;
+  opacity: 50%;
+}
+
+
+/* --------------------modal style---------------- */
+
 .contacts {
   width: 40%;
   display: flex;
@@ -156,6 +229,8 @@ header p span{
   margin: 0% 0%;
   justify-content: space-between;
 }
+/* --------------------card---------------- */
+
 .card-container {
   width: 47%;
   margin: 0 0;
@@ -163,15 +238,16 @@ header p span{
 .card {
   margin: 0;
   /* height: 50vh !important; */
-  background-color: #d1eaf3 !important;
+  background-color: #94ddf7 !important;
   transition: ease-in-out 0.5s;
+  border-radius: 20px !important;
   /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
 
 }
 .card:hover{
   background-color:#d9630f!important;
   color: white !important;
-  transform: scale(1.04);
+  transform: scale(1.02);
   transition: ease-in-out 0.5s;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -284,7 +360,7 @@ footer p {
   justify-content: space-between;
   width: 40% !important;
   text-decoration: none;
-  color: black;
+  color:black;
 }
 
 .btn {
@@ -430,7 +506,7 @@ footer p {
 
 
 /* -------------Media Query------------- */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbars {
     width: 100% !important;
     margin: 0% !important;
@@ -441,7 +517,8 @@ footer p {
     margin: 0% !important;
   }
   .navbar a span {
-    font-size: 35px !important;
+    font-size: 21px !important;
+    width: auto;
   }
   header {
     display: flex;
@@ -453,23 +530,26 @@ footer p {
     justify-content: center !important;
     }
   .contacts {
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .card-container {
     width: 100% !important;
   }
   .stacks{
-    /* height: 60% !important; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
-    /* justify-content: space-between; */
   }
   .stacks button{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     margin-top: 3px;
   }
   .image {
@@ -482,11 +562,12 @@ footer p {
   }
   .about-me {
     width: 100%;
+    height: auto;
     flex-direction: column;
-    margin-top: 50% !important;
+    /* margin-top: 50% !important; */
   }
   .about-text {
-    width: 80% !important;
+    width: 90% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -494,26 +575,18 @@ footer p {
   .about-text h1 {
     text-align: center;
   }
-  .archive {
-    margin-top: 18% !important;
+  .about-btn{
+    margin-top: 0 ;
   }
   .contacts {
     display: flex !important;
-    /* justify-content: center !important; */
     width: 100% !important;
   }
   .form {
     width: 98% !important;
-    /* justify-content: center !important; */
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .archive {
-    margin-top: 6% !important;
-  }
-  .archive button {
-    margin-bottom: 20% !important;
   }
   .about {
     margin-top: 20% !important;
