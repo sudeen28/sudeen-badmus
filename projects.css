@@ -16,7 +16,7 @@
   object-fit: contain;
   height: 350px;
   border-radius: 10px;
-  background-color: rgb(15, 15, 14);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   justify-content: center;
   align-items: center;

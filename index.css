@@ -6,6 +6,34 @@
   text-decoration: none;
 }
 
+/* ----------------------------------- */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #dff6ff !important;
+  z-index: 1000;
+}
+.loading-spinner img{
+  height: 150px;
+  animation: scale 1s ease-in-out infinite alternate;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.loaded .loading-container {
+  display: none;
+}
+/* ----------------------------------- */
+
 /* --------------------NAVBAR---------------- */
 .navbar-toggler{
   text-decoration: none !important;
