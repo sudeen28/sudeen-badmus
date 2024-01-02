@@ -1,0 +1,89 @@
+.myprojects {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.newlook {
+  width: 45%;
+}
+.newlook a{
+    color: black;
+  text-decoration: none;
+}
+.newlook-img {
+  object-fit: contain;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgb(15, 15, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.newlook-img img {
+  width: 400px;
+  height: 250px;
+  transition: all 0.5s;
+}
+.newlook img:hover {
+  transform: scale(1.07);
+  transition: all 0.5s;
+  padding: 0;
+}
+
+.dev {
+  display: flex;
+  justify-content: space-between;
+}
+.dev-text {
+  width: auto;
+  line-height: 0%;
+}
+.dev-text h1 {
+  font-family: "montserrat";
+  font-size: 30px;
+  font-weight: 600;
+}
+.dev-text p {
+  font-family: "montserrat";
+  font-size: 10px;
+  font-weight: 600;
+}
+.dev img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+.dev img:hover {
+  width: 30px;
+  height: 40px;
+  opacity: 5;
+}
+.newlook-det p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .myprojects{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+    .newlook{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .newlook-img{
+        object-fit: contain;
+        height: 300px;
+    }
+    .newlook-img img{
+        width: 250px;
+        height: 180px;
+    }
+}

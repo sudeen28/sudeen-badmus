@@ -180,7 +180,9 @@ header p span{
   height: 200px; 
   border-radius: 10px;
   transition: all ease-in-out 0.5s;
-  opacity: 80%;
+  opacity: 0.7;
+  outline: 2px solid black;
+  outline-offset: 2px;
 }
 .project1 img,
 .project2 img::after{
@@ -188,8 +190,7 @@ header p span{
 }
 .project1 img:hover,
 .project2 img:hover{
-  /* outline: 3px solid #d9630f; */
-  outline: 3px solid white;
+  outline: 2px solid white;
   transition: all ease-in-out 0.5s;
   opacity: 100%;
 }
