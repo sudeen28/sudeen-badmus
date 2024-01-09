@@ -163,13 +163,13 @@ header p span{
   font-family: 'montserrat';
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
+  /* align-items: center; */
+  /* position: relative; */
   transition: all 0.53s;
 
 }
 .offcanvas-body ul li a:hover{
-  /* margin-right: 35px !important; */
+  margin-right: 35px !important;
   transition: all 0.53s;
 }
   
@@ -478,14 +478,13 @@ footer p {
 .click:after {
   content: "";
   background: #f1f1f1;
-  color: black;
   display: block;
   position: absolute;
   padding-top: 100%;
   padding-left: 30%;
   margin-left: -5px !important;
   margin-top: -120%;
-  /* opacity: 0; */
+  opacity: 0;
   transition: all 0.8s
 }
 
@@ -569,7 +568,6 @@ footer p {
   .card-container {
     width: 100% !important;
   }
-
   .stacks{
     width: 100%;
     display: flex;
